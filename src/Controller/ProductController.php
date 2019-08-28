@@ -23,7 +23,6 @@ class ProductController extends AbstractController
         $product->setPrice(2999);
         $product->setDescription('Black desk');
 		$product->setAvailability(true);
-)
         $entityManager->persist($product);
 
         $entityManager->flush();
