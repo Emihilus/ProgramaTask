@@ -20,6 +20,6 @@ class Welcome extends AbstractController
             '<html><body>Welcome. '.$number.'</body></html>'
         );*/
 		
-		return $this->render('base.html.twig');
+		return $this->render('welcome.twig');
     }
 }
