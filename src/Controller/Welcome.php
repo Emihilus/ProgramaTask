@@ -5,7 +5,9 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class Welcome
+ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+
+class Welcome extends AbstractController
 {
      /**
       * @Route("/")
@@ -14,8 +16,10 @@ class Welcome
     {
         $number = random_int(0, 100);
 
-        return new Response(
+        /*return new Response(
             '<html><body>Welcome. '.$number.'</body></html>'
-        );
+        );*/
+		
+		return $this->render('base.html.twig');
     }
 }
