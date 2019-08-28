@@ -14,11 +14,6 @@ class Welcome extends AbstractController
       */
     public function welcome()
     {
-        $number = random_int(0, 100);
-
-        /*return new Response(
-            '<html><body>Welcome. '.$number.'</body></html>'
-        );*/
 		
 		return $this->render('welcome.twig');
     }
